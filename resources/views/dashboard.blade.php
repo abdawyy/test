@@ -28,7 +28,7 @@
           <p class="card-text"><strong>Name:</strong> {{ $user->name }}</p>
           <p class="card-text"><strong>Email:</strong> {{ $user->email }}</p>
           <p class="card-text"><strong>mobile:</strong> {{ $user->mobile }}</p>
-
+          <a class="btn btn-danger" href="/users/{{ $user->id }}/pdf" > generate pdf</a>
         </div>
       </div>
     </div>

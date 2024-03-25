@@ -43,6 +43,8 @@ route::get('/albumUpdate/{id}', function (){return view('updateAlbum');});
 route::get('/albumUpdate/{id}',[albumController::class,'edit']);
 
 
+Route::get('/users/{id}/pdf', [userController::class , 'generatePdf'])->name('users.pdf');
+
 
 route::get('/viewAlbum', function (){return view('viewAlbum');});
 route::get('/viewAlbum',[albumController::class,'show'])->name('viewAlbum');
